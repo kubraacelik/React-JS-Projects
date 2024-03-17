@@ -1,1 +1,8 @@
 # WeatherApp
+This project is a weather application with React. In the project, the user is prompted to enter a location and weather data is retrieved and displayed based on that location. First, two states, location and weatherData, are defined using the useState hook. location holds the location entered by the user and weatherData holds the weather data. When the user enters a location, this change is captured with the handleLocationChange function and reflected in the location state using the useState hook. Using the useEffect hook, an API call is made to pull the weather data when any change is detected in the location state. This call is made using the axios library and is used to retrieve weather data from weatherapi.com. The data received as a result of the API call is saved in the weatherData state. 
+The main component contains a header and an input box. When the user enters a location here, weather data is retrieved and displayed. If the data exists in the weatherData state, the weather information is mapped and the date, icon, average temperature and weather description for each day are shown.
+As a result of all these operations, the user can view the current weather information for a specified location.
+
+![Ekran görüntüsü 2024-03-17 211809](https://github.com/kubraacelik/WeatherApp/assets/101054783/ea71bd80-68dc-45a8-ba22-462a26bc14e1)
+![Ekran görüntüsü 2024-03-17 211717](https://github.com/kubraacelik/WeatherApp/assets/101054783/6ad21ef1-3a7f-44a0-94f1-63477b9f4ee2)
+![Ekran görüntüsü 2024-03-17 211744](https://github.com/kubraacelik/WeatherApp/assets/101054783/127ec64e-32f7-4ec0-b6b8-5ebfeebba221)
