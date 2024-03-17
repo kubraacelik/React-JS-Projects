@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,9 +13,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +26,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +44,52 @@
 
 .read-the-docs {
   color: #888;
+}
+
+body {
+  background-image: url(sky.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.location-input {
+  font-size: 15px;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+}
+
+.day-container {
+  margin-right: 30px;
+  padding: 15px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px;
+  text-align: center;
 }
