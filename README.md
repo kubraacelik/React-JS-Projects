@@ -15,8 +15,6 @@ The API is used to pull and process question data used in a quiz application.
 The dropdown allows the user to select the difficulty level. When the user makes a selection, it updates the state specified by setDifficultyChange. A list of difficulty levels is retrieved through the data prop and these levels are displayed in a <select> element.
 Modal displays the user's score in a modal window. When the user completes the quiz, this modal window becomes visible. When the restart button is clicked, the page reloads.
 QuestionCard shows the quiz questions and options. The user is given a time for each question. When the time is up or the user selects an option, the user moves to the next question. When the user answers, the score is updated and the correct answer is checked. If the user answers all questions or the time runs out, a modal window is displayed.
-![Ekran görüntüsü 2024-03-19 204215](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/47142c57-daac-47c3-bb27-36daeb7680bd)
-![Ekran görüntüsü 2024-03-19 204243](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/dc84baa3-dfad-4f11-b312-88ee785b5b7c)
-![Ekran görüntüsü 2024-03-19 204312](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/9fcf2544-2e9f-4d7f-a716-0f58bff3fba8)
-
-
+![Ekran görüntüsü 2024-03-19 204215](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/4e6b63ba-7fb9-4b38-9af4-9a636135cecd)
+![Ekran görüntüsü 2024-03-19 204243](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/5efbf8ad-855c-4935-8ef0-91e8344be9b8)
+![Ekran görüntüsü 2024-03-19 204312](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/8c7c893c-2dd4-40db-a27b-0b6aa22509eb)
