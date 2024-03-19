@@ -1,20 +1,29 @@
-import React from "react";
-import './dropdown.css'
+import React, { useState } from "react";
+import "./dropdown.css";
 
-const dropdown = ({ data, setDifficultyChange }) => {
+const Dropdown = ({ data, setDifficultyChange }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="dropdown">
       <select
+        className="dropdown-header"
+        onClick={() => setIsOpen(!isOpen)}
         onChange={(e) => setDifficultyChange(e.target.value)}
         name=""
         id=""
       >
+        <option disabled selected>
+          Zorluk Seviyesini Seçiniz
+        </option>
         {data.map((dt, i) => (
-          <option value={dt}>{dt}</option>
+          <option key={i} value={dt}>
+            {dt}
+          </option>
         ))}
       </select>
     </div>
   );
 };
 
-export default dropdown;
+export default Dropdown;
