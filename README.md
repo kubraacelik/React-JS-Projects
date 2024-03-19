@@ -8,13 +8,13 @@ As a result of all these operations, the user can view the current weather infor
 ![Ekran görüntüsü 2024-03-17 211744](https://github.com/kubraacelik/WeatherApp/assets/101054783/127ec64e-32f7-4ec0-b6b8-5ebfeebba221)
 
 ## quizapp
-This project includes a quiz application. It has two main components: Introduce and Quiz. 
-Introduce: This component allows the user to select the difficulty level before starting the quiz. Once the user has selected a difficulty level, when he/she clicks on the "START" button, he/she is redirected to the Quiz component via React Router using useNavigate. The total number of questions is defined as a certain constant.
-Quiz: This component displays quiz questions according to the difficulty level and number of questions parameters selected by the user. The relevant questions are fetched from the API using the difficulty level and number of questions values retrieved from the URL with the useParams hook. The QuestionCard component displays the questions to the user. As the user answers the questions, a score is kept and correct/incorrect answers are processed. When a question set is complete, a modal window is shown and the user sees their score.
-The API is used to pull and process question data used in a quiz application. 
-The dropdown allows the user to select the difficulty level. When the user makes a selection, it updates the state specified by setDifficultyChange. A list of difficulty levels is retrieved through the data prop and these levels are displayed in a <select> element.
-Modal displays the user's score in a modal window. When the user completes the quiz, this modal window becomes visible. When the restart button is clicked, the page reloads.
-QuestionCard shows the quiz questions and options. The user is given a time for each question. When the time is up or the user selects an option, the user moves to the next question. When the user answers, the score is updated and the correct answer is checked. If the user answers all questions or the time runs out, a modal window is displayed.
-![Ekran görüntüsü 2024-03-19 204215](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/4e6b63ba-7fb9-4b38-9af4-9a636135cecd)
-![Ekran görüntüsü 2024-03-19 204243](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/5efbf8ad-855c-4935-8ef0-91e8344be9b8)
-![Ekran görüntüsü 2024-03-19 204312](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/8c7c893c-2dd4-40db-a27b-0b6aa22509eb)
+The project entails a quiz application with two main components: "Introduce" and "Quiz".
+In the "Introduce" component, users select the difficulty level before commencing the quiz. Once chosen, clicking the "START" button redirects them to the Quiz component via React Router, utilizing the useNavigate hook. The total number of questions is predefined.
+The "Quiz" component fetches relevant questions from an API based on the selected difficulty level and the total number of questions. This is achieved using the useParams hook to extract parameters from the URL. The fetched questions are displayed using the QuestionCard component. As users answer questions, their scores are updated, and correct/incorrect answers are processed. A modal window displays the user's score upon completing the quiz.
+The difficulty level selection is facilitated by a dropdown menu, which updates the state (setDifficultyChange) upon selection. The dropdown options are populated with the available difficulty levels retrieved from the data prop.
+The Modal component showcases the user's score in a modal window upon completing the quiz. Clicking the restart button reloads the page.
+The QuestionCard component displays quiz questions and options, each with a designated time limit. Upon time expiration or user selection, the user proceeds to the next question. The score updates accordingly, and correct answers are verified. If all questions are answered or the time runs out, a modal window appears.
+
+![Ekran görüntüsü 2024-03-19 204215](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/c87b30da-3017-42aa-91e6-afe6d3dee8d1)
+![Ekran görüntüsü 2024-03-19 204243](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/7781ac57-3dbf-41be-809d-48698fe36011)
+![Ekran görüntüsü 2024-03-19 204312](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/f1017489-83db-45a6-a546-7e47572836a5)
