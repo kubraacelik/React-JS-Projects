@@ -1,12 +1,12 @@
 import "./App.css";
 import "./Pokecard.css";
-import Pokedex from "./Pokedex";
+import Pokegame from "./Pokegame";
 
 function App() {
   return (
     <>
-      <h1>Pokemon Go Card Name</h1>
-      <Pokedex />
+      <h1 style={{fontSize:40}}>Pokemon Go Card Name</h1>
+      <Pokegame />
     </>
   );
 }
