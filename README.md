@@ -18,3 +18,16 @@ The QuestionCard component displays quiz questions and options, each with a desi
 ![Ekran görüntüsü 2024-03-19 204215](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/c87b30da-3017-42aa-91e6-afe6d3dee8d1)
 ![Ekran görüntüsü 2024-03-19 204243](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/7781ac57-3dbf-41be-809d-48698fe36011)
 ![Ekran görüntüsü 2024-03-19 204312](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/f1017489-83db-45a6-a546-7e47572836a5)
+
+## pokemons
+Pokecard: Represents each Pokemon card. The card contains the Pokemon's picture, name, type and experience points.
+Pokedex: A component that lists Pokemon cards and creates each card using the Pokecard component. It also shows the total experience points of each player's hand and a title indicating the winner of the game.
+Pokegame: The core component of the game. It generates the hands of two players, calculates the total experience points of each player's hand and finally passes the results to the Pokedex component.
+The flow of the game is as follows:
+-Two players' hands are created.
+-The total experience points of each player's hand are calculated.
+-The results are passed to the Pokedex component and displayed along with the players' cards.
+-Which player wins is decided and shown as a title.
+![Ekran görüntüsü 2024-04-27 173956](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/766f9b77-4982-4e22-93c5-8430b4e66d02)
+![Ekran görüntüsü 2024-04-27 174020](https://github.com/kubraacelik/React-JS-Projects/assets/101054783/18ab46e8-6db2-4c48-9e3c-8ee929de5990)
+
