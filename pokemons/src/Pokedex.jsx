@@ -30,6 +30,6 @@ class Pokedex extends Component {
       </div>
     );
   }
-}
+} 
 
 export default Pokedex;
