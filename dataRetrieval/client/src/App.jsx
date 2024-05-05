@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [users, setUsers] = useState([]);
+
+// useEffect hook'u ile ilk render'dan sonra bir kere çalışacak HTTP GET isteği
   useEffect(() => {
     axios
       .get("http://localhost:3001/getUsers")
@@ -25,12 +27,13 @@ function App() {
           </thead>
           <tbody>
             {users.map((user) => {
-              return
+             return (
               <tr>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.age}</td>
-              </tr>;
+              </tr>
+            );
             })}
           </tbody>
         </table>
